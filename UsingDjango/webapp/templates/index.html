@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form action="{% url 'index' %}" method="post">
+    {% csrf_token %}
+    <input id='InputUrl' name= 'InputUrl' type="URL">
+    <input type="submit" value="Get Url">
+</form>
+</body>
+</html>
