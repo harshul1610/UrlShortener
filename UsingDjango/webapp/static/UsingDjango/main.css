@@ -1,0 +1,17 @@
+
+  html {
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  background: url(Legacy-code.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.containermid {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}

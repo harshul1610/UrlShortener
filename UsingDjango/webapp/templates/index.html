@@ -1,14 +1,30 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="description" content="Url shortening service">
+    <meta name='author' content="Harshul Jain">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'UsingDjango/main.css' %}">
+    <title>Shorten Your Urls</title>
 </head>
 <body>
+
+<center><h1 style='color:white;'>Urls.ly</h1></center>	
+
+<div class='containermid'>
 <form action="{% url 'index' %}" method="post">
     {% csrf_token %}
-    <input id='InputUrl' name= 'InputUrl' type="URL">
-    <input type="submit" value="Get Url">
+    <center><input style='width:50%;' id='InputUrl' name= 'InputUrl' type="URL">
+    <button style='display:inline;' class="btn waves-effect waves-light" type="submit" name="action">Shorten Url
+     </button></center>
 </form>
+</div>
+
+<!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 </body>
 </html>
